@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card class="baseCard">
+        <mat-card-content>
+            <div>         
+                <mat-form-field appearance="outline" class="my-custom-class">
+                    <mat-label>Search</mat-label>
+                    <input [formControl]="cityName" id="cityName" matInput placeholder="Enter City" (keyup.enter)="onCityEnter()">
+                </mat-form-field>
+                <div>{{cityName.value|json}}</div>
+                <div>{{weatherData|json}}</div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
