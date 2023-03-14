@@ -3,7 +3,7 @@
         <mat-card-content>
             <div>         
                 <mat-form-field appearance="outline" class="my-custom-class">
-                    <mat-label>Search</mat-label>
+                    <mat-label>Search City</mat-label>
                     <input [formControl]="cityName" id="cityName" matInput placeholder="Enter City" (keyup.enter)="onCityEnter()">
                 </mat-form-field>
                 <div>{{cityName.value|json}}</div>
